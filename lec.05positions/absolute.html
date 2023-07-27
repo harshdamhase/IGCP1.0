@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title> Relative Position</title>
+    <title>Position</title>
     <style>
-      .btn {
+      .card {
+        height: 200px;
+        width: 400px;
+        background-color: rgb(208, 244, 149);
+        margin-top: 70px;
         position: relative;
-        top: 50px;
+        border-radius: 10px;
+      }
+
+      .img {
+        position: absolute;
+        width: 50px;
+        left: 140px;
+        top: -50px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 50%;
+        background-color: rgb(130, 218, 231);
       }
     </style>
   </head>
 
   <body>
-    <button class="btn">Click me!</button>
+    <div class="card">
+      <img src="whatsapp.png" alt="img" class="img" />
+    </div>
   </body>
 </html>
