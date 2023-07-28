@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Alignment</title>
+    <style>
+        .parent {
+            background-color: tomato;
+            padding: 0;
+        }
+
+        .card-a {
+            display: inline-block;
+            width: 200px;
+            border: 2px solid black;
+            background-color: aliceblue;
+            height: 140px;
+            vertical-align: bottom;
+        }
+
+        .card-b {
+            border: 2px solid black;
+            width: 200px;
+            background-color: aliceblue;
+            display: inline-block;
+            height: 100px;
+            vertical-align: bottom;
+        }
+
+        .card-c {
+            border: 2px solid black;
+            width: 200px;
+            background-color: aliceblue;
+            display: inline-block;
+            height: 200px;
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">H
+        <div class="card-a"> Card A </div>
+
+        <div class="card-b"> Card B</div>
+
+        <div class="card-c">Card C</div>
+    </div>
+</body>
+
+</html>
