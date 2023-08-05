@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            background-color: tomato;
+          width: 300px;
+          height: 80px;
+          font-size: 40px;
+        }
+        /* Mobile Devices */
+
+        @media screen and (min-width: 600px) and (max-width:768px) {
+
+            .btn {
+                background-color: aquamarine;
+            }
+
+        }
+
+        /* Tablet Devices */
+
+        @media screen and (min-width: 769px) and (max-width:992px) {
+            .btn {
+                background-color: blue;
+            }
+        }
+
+        /* Dekstop device */
+
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+
+            .btn {
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<button class="btn">This is button</button>
+
+</body>
+
+</html>
