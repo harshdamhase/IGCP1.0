@@ -4,42 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript</title>
+  <title>Animation</title>
+  <style>
+    .box {
+      width: 100px;
+      background-color: tomato;
+      animation: grow;
+      animation-duration: 4s;
+      height: 50px;
+      animation-iteration-count: infinite;
+      margin: 10px;
+    }
+
+    .linear {
+      animation-timing-function: linear;
+
+    }
+
+    .ease {
+      animation-timing-function: ease;
+    }
+
+    .ease-in {
+      animation-timing-function: ease-in;
+
+    }
+
+    .ease-out {
+      animation-timing-function: ease-out;
+
+    }
+
+    .ease-in-out {
+      animation-timing-function: ease-in-out;
+
+    }
+
+    @keyframes grow {
+      0% {
+        width: 300px;
+      }
+
+      100% {
+        width: 100px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<!--   
-/    // let a = parseInt(prompt("Enter marks of subject1"));
-    // let b = parseInt(prompt("Enter marks of subject2"));
-    // let c = parseInt(prompt("Enter marks of subject3"));
-    // let d = parseInt(prompt("Enter marks of subject4"));
-    // let e = parseInt(prompt("Enter marks of subject5"));
 
-    // document.write("marks of sub1:"+a+"<br/>"); -->
-    <!-- // document.write("marks of sub1:"+b+"<br/>");
-    // document.write("marks of sub1:"+c+"<br/>");
-    // document.write("marks of sub1:"+d+"<br/>");
-    // document.write("marks of sub1:"+e+"<br/>");
+  <div class="box linear">
+    linear
+  </div>
 
 
-    // let sum = a + b + c + d + e;
-    // document.write(sum);
-    -->
+  <div class="box ease-in">
+    ease
+  </div>
 
-  
-  
- 
+  <div class="box ease-out">
+    ease-in
+  </div>
 
+  <div class="box ease-in-out">
+    ease-out
+  </div>
 
+  <div class="box ease-in-out">
+    ease-in-out
+  </div>
 
-</script>
 </body>
 
 </html>
-
-
-
-
-
-
-
