@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan On Off</title>
+</head>
+
+<body>
+
+    <img src="./off.png" id="fan" height="160px" /><br />
+
+    <button type="button" onclick="fanOn()">On</button>
+
+
+    <button type="button" onclick="fanOff()">off</button>
+
+    <script>
+        const fanEle = document.getElementById('fan');
+
+        function fanOn() {
+            fanEle.src = "on.png";
+        }
+
+        function fanOff() {
+            fanEle.src = "off.png";
+        }
+    </script>
+</body>
+
+</html>
