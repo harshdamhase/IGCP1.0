@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+
+    <h2>Aap kon ho???</h2>
+
+    <p id="answer">Answer </p>
+
+    <button onclick="parii()">Papa ki pari</button>
+
+    <button onclick="ladla()">Maa Ka Ladla</button>
+
+    <script>
+        function parii()
+        {
+            const ans=document.getElementById('answer');
+            ans.innerText="Answer: I am Papa ki pari";
+        }
+
+        function ladla()
+        {
+            const ans=document.getElementById('answer');
+            ans.innerText="Answer: I am maa ki ladla";
+        }
+    </script>
+</body>
+</html>
