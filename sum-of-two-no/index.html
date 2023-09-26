@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of num</title>
+</head>
+
+<body>
+    Enter Number1:
+    <input type="text" id="num1" /><br /><br />
+
+    Enter Number2:
+    <input type="text" id="num2" /><br />
+
+    <p id="ans">Answer:</p><br />
+
+    <button type="button" onclick="calculateSum()">calculateSum</button>
+
+    <button type="button" onclick="resetsum()">Reset Sum</button>
+
+    <script>
+        function calculateSum() {
+            const inputbox1 = document.getElementById('num1');
+            const inputbox2 = document.getElementById('num2');
+
+            const val1 = parseInt(inputbox1.value);
+            const val2 = parseInt(inputbox2.value);
+
+            const sum = val1 + val2;
+
+            const result = document.getElementById('ans');
+            result.innerText = `Answer: ${sum}`;
+        }
+        function resetsum() {
+            const inputbox1 = document.getElementById('num1');
+            const inputbox2 = document.getElementById('num2');
+
+            inputbox1.value = "";
+            inputbox2.value = "";
+
+            const result = document.getElementById('ans');
+            result.innerText = "";
+        }
+    </script>
+</body>
+
+</html>
