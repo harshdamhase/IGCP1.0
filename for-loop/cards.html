@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards using For loop</title>
+    <style>
+        .bg-info {
+            background-color: #acd2f8;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .student-container {
+            background-color: #fff;
+            border: 2px double pink;
+            padding: 10px;
+        }
+
+        .stud-card {
+            border: 1px solid #ccc;
+            margin: 5px;
+            padding: 5px;
+            background-color: #ff9aa7;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body class="bg-info">
+    <h1 class="heading">Student List</h1>
+    <div class="student-container" id="stud-container">
+
+        <script>
+            const stud = [
+                "Harshda",
+                "Yogita",
+                "Shweta",
+                "Anushree",
+                "Riya"
+            ];
+
+            const studentList = document.getElementById('stud-container')
+
+            for (let i = 0; i < stud.length; i++) {
+                studentList.innerHTML = studentList.innerHTML +
+                    `<div class="stud-card"> Hello ${stud[i]}</div>`
+
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
