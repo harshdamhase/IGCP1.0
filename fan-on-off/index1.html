@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGGLE</title>
+    <style>
+     .container{
+          height: 400px;
+          width: 300px;  
+          display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+       
+        .btn{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+        .fan-img{
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <img src="./off.png" id="fan" class="fan-img"/><br/><br/>
+    <button type="button" onclick="toggle()" class="btn">toggle</button>
+
+    <script>
+        const fanEle = document.getElementById('fan');
+        let state = false;
+
+        function toggle() {
+            if (state == false) {
+                fanEle.src = "on.png";
+                state = true;
+            }
+            else {
+                fanEle.src = "off.png";
+                state = true;
+            }
+        }
+    </script>
+</div>
+</body>
+
+</html>
